@@ -9,7 +9,7 @@
     <br />
     <a
       class="rounded-lg bg-gray-900 px-6 py-3 font-semibold text-white shadow-lg transition duration-300 hover:bg-white hover:text-gray-900 dark:bg-gray-900 dark:text-white"
-      href="mailto:nubaidrashid369@gmail.com"
+      href="mailto:mamunur008@gmail.com"
       target="_blank"
     >
       Contact Me

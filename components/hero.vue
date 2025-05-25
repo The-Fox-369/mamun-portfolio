@@ -4,9 +4,9 @@
     id="hero"
   >
     <div class="space-y-6 text-center">
-      <h1 class="text-5xl font-semibold">Hi, I'm The Fox</h1>
+      <h1 class="text-5xl font-semibold">Hi, I'm Mamunur Rashid</h1>
       <p class="mx-auto max-w-xl text-lg text-gray-300">
-        A passionate full-stack developer creating amazing web experiences.
+        A passionate backend-developer creating amazing web experiences.
       </p>
       <div class="flex justify-center space-x-4">
         <a

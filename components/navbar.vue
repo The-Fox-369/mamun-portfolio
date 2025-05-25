@@ -4,13 +4,17 @@
   >
     <div class="flex items-center justify-between p-4">
       <img
-        src="../public/imgs/fox.svg"
-        alt="Fox Logo"
-        class="h-12 w-12 rounded-full"
+        src="../public/imgs/1000003463.jpg"
+        alt="Nav Profile"
+        class="h-12 w-12 rounded-full object-cover"
       />
 
-      <button @click="toggleMenu" class="md:hidden">
-        <img src="../public/imgs/menu.svg" alt="Menu" class="h-6 w-6" />
+      <button @click="toggleMenuHandler()" class="md:hidden">
+        <img
+          src="../public/imgs/menu.svg"
+          alt="Menu"
+          class="h-6 w-6 md:hidden"
+        />
       </button>
 
       <div class="hidden gap-6 md:flex">
@@ -27,11 +31,10 @@
           >Contact</a
         >
       </div>
-      <Toggle />
     </div>
 
     <div
-      v-if="menuOpen"
+      v-if="toggleMenu"
       class="flex flex-col items-center p-4 shadow-md md:hidden"
     >
       <a href="#hero" class="py-2 text-gray-600 duration-300 hover:text-black"
@@ -54,6 +57,14 @@
   </nav>
 </template>
 
-<script setup></script>
+<script setup>
+import { ref } from "vue";
+// State to manage the visibility of the mobile menu
+const toggleMenu = ref(false);
+// Function to toggle the mobile menu visibility
+function toggleMenuHandler() {
+  toggleMenu.value = !toggleMenu.value;
+}
+</script>
 
 <style scoped></style>
